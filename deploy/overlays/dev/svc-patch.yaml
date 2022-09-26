@@ -1,0 +1,3 @@
+- op: replace
+  path: /spec/ports/0/nodePort
+  value: 0000 # 服务暴露端口，在pingcode上进行规划https://pinguo.pingcode.com/wiki/spaces/604b1606e1c75625fb6cdb51/pages/61a43767b6353cc6b3beab8e

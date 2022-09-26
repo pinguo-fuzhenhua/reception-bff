@@ -1,0 +1,20 @@
+app:
+  name: &appName kratos-template-bff
+  env: &appEnv prod
+  region: hz #hz(杭州) sg (新加坡)
+http:
+  address: 0.0.0.0:8000
+  timeout: 30s
+params:
+  TemplateSvcAddr: dns:///localhost:9000
+trace:
+  name: *appName
+  env: *appEnv
+  aliConfig:
+    project: ""
+    instanceId: ""
+    endpoint: ""
+    accessKey: ""
+    AccessSecret: ""
+  jaeger:
+    endpoint: http://10.0.5.176:14268/api/traces
